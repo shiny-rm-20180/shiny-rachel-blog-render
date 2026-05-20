@@ -1,11 +1,11 @@
 services:
   - type: web
     name: shiny-rachel-blog
-    runtime: static
-    staticPublishPath: .
-    buildCommand: ""
-    pullRequestPreviewsEnabled: false
-    headers:
-      - path: /*
-        name: Cache-Control
-        value: public, max-age=3600
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SITE24X7_APM_LICENSE_KEY
+        sync: false

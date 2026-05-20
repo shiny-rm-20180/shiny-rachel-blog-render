@@ -1,0 +1,17 @@
+{
+  "name": "shiny-rachel-blog",
+  "version": "1.0.0",
+  "description": "Shiny Rachel Personal Blog",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "apminsight": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
